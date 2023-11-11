@@ -1,0 +1,22 @@
+# ninja log v5
+1	109	7213758110000000	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/main.xcl	f5da3c1c3f22bfa1
+8	161	7213775733373468	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/main.pbi	378b5625dd5157c1
+20	204	7213774438676706	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/DIO.pbi	a389d7ccafe36b44
+17	130	7213758110000000	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/DIO.xcl	1a2dcf6533ac6f6a
+168	284	7213775734613098	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/elab.pbd	af4686bfc56d545e
+289	2192	7213775753250835	C:/Abdo/Programming/CSE211-Embedded/Lab3/Debug/BrowseInfo/elab.pbw	4e262ab962db907a
+0	1354	7213791640000000	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/DIO.xcl	5c8996f9f5622dfc
+126	1182	7213791640000000	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/main.xcl	ed87d5e62585d64d
+0	83	7213804684404146	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/main.pbi	a6c4f40f86f8c3b6
+1361	1457	7213791648032111	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/DIO.pbi	122d6295f6f48775
+191	287	7213803665393315	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbd	d809dc001b717b4c
+291	1132	7213803673564022	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbw	dcfcf00a10fd6e56
+15	113	7213797330000000	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/SWITCH.xcl	1a6a7f830877dd46
+2	95	7213797330000000	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/LED.xcl	a8486eee6d61e45c
+101	208	7213797339938028	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/LED.pbi	60e256b7084cff87
+117	227	7213797340118818	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/SWITCH.pbi	6d4d4368e319d7f6
+5	117	7213804737071260	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbd	d809dc001b717b4c
+122	1055	7213804746147052	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbw	dcfcf00a10fd6e56
+1	103	7213805454994483	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/main.pbi	a6c4f40f86f8c3b6
+107	236	7213805456316488	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbd	d809dc001b717b4c
+1	1438	7213805529570258	C:/Abdo/Programming/CSE211-Embedded/Lab4/Debug/BrowseInfo/elab.pbw	dcfcf00a10fd6e56
