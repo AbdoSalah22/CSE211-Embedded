@@ -1,138 +1,79 @@
-#include "LCD.h"
-#include "DIO.h"
-#include "KEYPAD.h"
-#include <string.h>
-#include <stdlib.h>
+#include "tm4c123gh6pm.h"
+#include "bitwise_operation.h"
 
-int main() {
-    lcd_init();
-    keypad_init();
-
-    char operand1[10] = "";  // Assuming operands are integers and fit in 10 characters
-    char operand2[10] = "";
-    char operator;
-
-    // Display instructions on the LCD
-    lcd_command(0x01);  // Clear display
-    lcd_data('N');
-    lcd_data('u');
-    lcd_data('m');
-    lcd_data(':');
-    lcd_data(' ');
+void delayMs (int n);
+void delayUs(int n);
+void LCD_COMMAND(unsigned char command);
+void LCD_DATA(unsigned char data);
+void LCD_INIT(void);
 
 
-    while (1) {
-        // Get the first operand
-        lcd_command(0xC0);  // Move cursor to the second line
-        lcd_data('E');
-        lcd_data(':');
-        lcd_data(' ');
+int main(){
+    LCD_INIT();
 
-        int i = 0;
-        while (1) {
-            uint8 key = keypad_readkey();
-            if (key != 0) {
-                lcd_data(key);
-                operand1[i++] = key;
+    LCD_DATA('H');
+    LCD_DATA('E');
+    LCD_DATA('L');
+    LCD_DATA('L');
+    LCD_DATA('O');
+    LCD_DATA('H');
+    LCD_DATA('E');
+    LCD_DATA('L');
+    LCD_DATA('L');
+    LCD_DATA('O');
+}
 
-                if (key == '=') {
-                    operand1[i - 1] = '\0';
-                    break;
-                }
-            }
-        }
 
-        // Get the operator
-        while (1) {
-            lcd_data(' ');
+void LCD_INIT(){
 
-            uint8 key = keypad_readkey();
-            if (key != 0 && strchr("+-*/", key) != NULL) {
-                lcd_data(key);
-                operator = key;
-                break;
-            }
-        }
-
-        // Get the second operand
-        lcd_data(' ');
-
-        i = 0;
-        while (1) {
-            uint8 key = keypad_readkey();
-            if (key != 0) {
-                lcd_data(key);
-                operand2[i++] = key;
-
-                if (key == '=') {
-                    operand2[i - 1] = '\0';
-                    break;
-                }
-            }
-        }
-
-        // Convert operands to integers
-        int num1 = atoi(operand1);
-        int num2 = atoi(operand2);
-
-        // Perform the calculation and display the result
-        int result;
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                } else {
-                    // Handle divide-by-zero case
-                    lcd_command(0xC0);  // Move cursor to the second line
-                    lcd_data('E');
-                    lcd_data('r');
-                    lcd_data('r');
-                    lcd_data('o');
-                    lcd_data('r');
-                    lcd_data('!');
-                    continue;  // Restart the loop
-                }
-                break;
-            default:
-                // Invalid operator
-                continue;  // Restart the loop
-        }
-
-        // Display the result
-        lcd_command(0xC0);  // Move cursor to the second line
-        lcd_data('=');
-        lcd_data(' ');
-        lcd_data(' ');
-        lcd_data(' ');
-        lcd_data(' ');
-
-        if (result < 0) {
-            lcd_data('-');
-            result = -result;
-        }
-
-        // Display each digit of the result
-        int divisor = 10000;
-        int leadingZeros = 1;
-
-        while (divisor > 0) {
-            int digit = result / divisor;
-            if (digit > 0 || !leadingZeros || divisor == 1) {
-                lcd_data(digit + '0');
-                leadingZeros = 0;
-            }
-            result %= divisor;
-            divisor /= 10;
-        }
-    }
+    SYSCTL_RCGCGPIO_R|=0x01; //enable clock for GPIOA
+    SYSCTL_RCGCGPIO_R|=0x02; //enable clock for GPIOB
+    
+    GPIO_PORTA_DIR_R|=0xE0;  //setting pins 5,6,7 to output pins
+    GPIO_PORTA_DEN_R|=0xE0; //setting pins 5,6,7 to be digital pins
+    
+    GPIO_PORTB_DIR_R=0xFF;  //setting pins 0-7 to output pins
+    GPIO_PORTB_DEN_R=0xFF;  //setting pins 0-7 to be digital pins
+    
+    //Initialization sequence for initializing the lcd (waking up and start initialize)
+    delayMs(20);
+    LCD_COMMAND(0x30);
+    delayMs(5);
+    LCD_COMMAND(0x30);
+    delayUs(100);
+    LCD_COMMAND(0x30);
+      
+    LCD_COMMAND(0x38);      /* set 8-bit data, 2-line, 5x7 font */
+    LCD_COMMAND(0x06);      /* move cursor right */
+    LCD_COMMAND(0x01);      /* clear screen, move cursor to home */
+    LCD_COMMAND(0x0F);      /* turn on display, cursor blinking */
 
 }
+
+void LCD_COMMAND(unsigned char command){
+
+  GPIO_PORTA_DATA_R=0;        /*setting all 7 bits of port A with 0 including RS(setting RS to zero to enable command register) and E and R/W */
+  GPIO_PORTB_DATA_R=command;
+  GPIO_PORTA_DATA_R=0x80;    /*setting the enable pin (pin 7) to 1 and other pins to zero */
+  delayUs(0);
+  GPIO_PORTA_DATA_R=0;   
+ 
+  if (command<4){
+    delayMs(2);             /* since the first 2 commands (1&2) takes 1.64ms to execute, therefore we delay the tiva for the required time*/
+  }
+  else{
+    delayUs(40);          /*all other commands executes in 40us */
+  }
+  
+}
+
+
+void LCD_DATA(unsigned char data){
+  GPIO_PORTA_DATA_R=0x20; /*setting pin 5 to 1 which is the RS pin (to enable the data register)*/
+  GPIO_PORTB_DATA_R=data;
+  GPIO_PORTA_DATA_R|=0x80;   
+  delayUs(0);
+  GPIO_PORTA_DATA_R=0;    
+  delayUs(40);
+}
+

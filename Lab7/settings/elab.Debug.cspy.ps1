@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Abdo\Programming\CSE211-Embedded\Lab7\settings\elab.Debug.general.xcl" --backend -f "C:\Abdo\Programming\CSE211-Embedded\Lab7\settings\elab.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Abdo\Programming\CSE211-Embedded\Lab8\settings\elab.Debug.general.xcl" --backend -f "C:\Abdo\Programming\CSE211-Embedded\Lab8\settings\elab.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Abdo\Programming\CSE211-Embedded\Lab7\settings\elab.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Abdo\Programming\CSE211-Embedded\Lab7\settings\elab.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Abdo\Programming\CSE211-Embedded\Lab8\settings\elab.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Abdo\Programming\CSE211-Embedded\Lab8\settings\elab.Debug.driver.xcl" 
 }

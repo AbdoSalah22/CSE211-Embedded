@@ -1,7 +1,7 @@
-C:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.pbi: \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8\LED.c \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8/DIO.h \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8/tm4c123gh6pm.h \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8/bitwise_operation.h \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8/types.h \
-  C:\Abdo\Programming\CSE211-Embedded\Lab8/LED.h
+C:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.pbi: \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2\LED.c \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2/DIO.h \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2/tm4c123gh6pm.h \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2/bitwise_operation.h \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2/types.h \
+  C:\Abdo\Programming\CSE211-Embedded\Lab8.2/LED.h

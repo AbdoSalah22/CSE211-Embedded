@@ -1,0 +1,176 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  23/Dec/2023  11:55:37
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Exe\elab.out
+#    Map file     =
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\List\elab.map
+#    Command line =
+#        -f C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Exe\elab.out.rsp
+#        (C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\DIO.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\KEYPAD.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\LCD.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\LED.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\main.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\startup_ewarm.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\SWITCH.o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj\SYSTICK.o
+#        --no_out_extension -o
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Exe\elab.out --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\List\elab.map --config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
+#        C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3'ffff] { ro };
+define block CSTACK with size = 4K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+do not initialize { rw section .noinit };
+
+  Section  Kind         Address   Size  Object
+  -------  ----         -------   ----  ------
+"A0":                            0x26c
+  .intvec  const            0x0  0x26c  startup_ewarm.o [1]
+                        - 0x26c  0x26c
+
+"P1":                            0x18a
+  .text    ro code        0x26c   0xf2  main.o [1]
+  .text    ro code        0x360   0x22  fpinit_M.o [3]
+  .text    ro code        0x384   0x1e  cmain.o [4]
+  .text    ro code        0x3a2    0x4  low_level_init.o [2]
+  .text    ro code        0x3a6    0x4  exit.o [2]
+  .text    ro code        0x3ac    0xa  cexit.o [4]
+  .text    ro code        0x3b8   0x14  exit.o [5]
+  .text    ro code        0x3cc   0x1c  cstartup_M.o [4]
+  .text    ro code        0x3e8    0xe  startup_ewarm.o [1]
+                        - 0x3f6  0x18a
+
+"P2":                            0x400
+  .noinit  uninit   0x2000'0000  0x400  startup_ewarm.o [1]
+                  - 0x2000'0400  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x3f6     0x3'ffff  0x3'fc0a
+  0x2000'0400  0x2000'7fff    0x7c00
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj: [1]
+    main.o                242
+    startup_ewarm.o        14      620    1'024
+    -------------------------------------------
+    Total:                256      620    1'024
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tls.a: [3]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           28
+    -------------------------------------------
+    Total:                 68
+
+shb_l.a: [5]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    8
+-----------------------------------------------
+    Grand Total:          394      620    1'024
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address   Size  Type      Object
+-----                     -------   ----  ----      ------
+?main                       0x385         Code  Gb  cmain.o [4]
+FaultISR                    0x3f3    0x2  Code  Lc  startup_ewarm.o [1]
+IntDefaultHandler           0x3f5    0x2  Code  Lc  startup_ewarm.o [1]
+NmiSR                       0x3f1    0x2  Code  Lc  startup_ewarm.o [1]
+Region$$Table$$Base           0x0          --   Gb  - Linker created -
+Region$$Table$$Limit          0x0          --   Gb  - Linker created -
+ResetISR                    0x3e9    0x8  Code  Gb  startup_ewarm.o [1]
+UART0_Transmit              0x2ff   0x10  Code  Gb  main.o [1]
+__cmain                     0x385         Code  Gb  cmain.o [4]
+__exit                      0x3b9   0x14  Code  Gb  exit.o [5]
+__iar_init_vfp              0x361         Code  Gb  fpinit_M.o [3]
+__iar_program_start         0x3cd         Code  Gb  cstartup_M.o [4]
+__low_level_init            0x3a3    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                0x0  0x26c  Data  Gb  startup_ewarm.o [1]
+_call_main                  0x391         Code  Gb  cmain.o [4]
+_exit                       0x3ad         Code  Gb  cexit.o [4]
+delayMs                     0x345   0x1a  Code  Gb  main.o [1]
+exit                        0x3a7    0x4  Code  Gb  exit.o [2]
+main                        0x26d   0x92  Code  Gb  main.o [1]
+pui32Stack            0x2000'0000  0x400  Data  Lc  startup_ewarm.o [1]
+
+
+[1] = C:\Abdo\Programming\CSE211-Embedded\Lab9\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+    394 bytes of readonly  code memory
+    620 bytes of readonly  data memory
+  1'024 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

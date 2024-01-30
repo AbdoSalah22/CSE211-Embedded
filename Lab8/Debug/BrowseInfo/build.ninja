@@ -24,97 +24,97 @@ rule PDBLINK
 
 
 #Build steps
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\DIO.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\DIO.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\DIO.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\DIO.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\KEYPAD.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\KEYPAD.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\KEYPAD.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\KEYPAD.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\LCD.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\LCD.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LCD.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LCD.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\LED.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\LED.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LED.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LED.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\main.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\main.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\main.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\main.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\startup_ewarm.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\startup_ewarm.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\startup_ewarm.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\startup_ewarm.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\SWITCH.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\SWITCH.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SWITCH.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SWITCH.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\SYSTICK.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\SYSTICK.c -o C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.tmp
-  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.xcl.rsp
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SYSTICK.c -xcl_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.xcl -macro_file C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SYSTICK.c -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.tmp
+  rspfile_name = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.xcl.rsp
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\DIO.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\DIO.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\KEYPAD.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\KEYPAD.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\LCD.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LCD.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\LED.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\LED.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\main.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\main.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\startup_ewarm.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\startup_ewarm.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\SWITCH.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SWITCH.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.xcl |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\SYSTICK.c
-  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.xcl
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.pbi : INDEXER C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.xcl |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\SYSTICK.c
+  flags = -out=C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.pbi -f C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.xcl
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbw : MAKEBROWSE C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbd
-  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbd -output C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbw
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbw : MAKEBROWSE C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbd
+  flags = C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbd -output C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbw
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part0.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.pbi |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.pbi $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.pbi
-  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part0.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\DIO.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\KEYPAD.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LCD.pbi
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part0.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.pbi |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.pbi $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.pbi
+  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part0.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\DIO.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\KEYPAD.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LCD.pbi
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part1.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.pbi |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.pbi $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.pbi
-  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part1.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\LED.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\main.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\startup_ewarm.pbi
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part1.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.pbi |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.pbi $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.pbi
+  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part1.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\LED.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\main.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\startup_ewarm.pbi
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part2.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.pbi |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.pbi
-  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part2.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SWITCH.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\SYSTICK.pbi
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part2.pbi : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.pbi |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.pbi
+  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part2.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SWITCH.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\SYSTICK.pbi
 
-build C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbd : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part0.pbi |  $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part1.pbi $
-C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part2.pbi
-  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab.pbd C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part0.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part1.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8\Debug\BrowseInfo\elab_part2.pbi
+build C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbd : PDBLINK C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part0.pbi |  $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part1.pbi $
+C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part2.pbi
+  flags = -M C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab.pbd C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part0.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part1.pbi C$:\Abdo\Programming\CSE211-Embedded\Lab8.2\Debug\BrowseInfo\elab_part2.pbi
 
